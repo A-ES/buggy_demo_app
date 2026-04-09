@@ -1,4 +1,6 @@
 def calculate_discount(price, quantity):
+    if quantity == 0:
+        return 0
     avg = price / quantity       # <-- divide by zero!
     if avg > 100:
         return 0.2
